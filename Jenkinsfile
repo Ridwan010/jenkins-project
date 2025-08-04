@@ -34,7 +34,7 @@ pipeline {
 
             steps {
 
-                sh 'mvn clean package'
+                bat 'mvn clean package'
 
             }
 
@@ -44,7 +44,7 @@ pipeline {
 
             steps {
 
-                sh 'docker build -t $IMAGE_NAME .'
+                bat 'docker build -t $IMAGE_NAME .'
 
             }
 
@@ -54,7 +54,7 @@ pipeline {
 
             steps {
 
-                sh 'docker run --rm -d -p 5050:9090 $IMAGE_NAME'
+                bat 'docker run --rm -d -p 5050:9090 $IMAGE_NAME'
 
             }
 
