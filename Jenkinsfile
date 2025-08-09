@@ -6,7 +6,7 @@ pipeline {
 
         maven 'Maven 3'       // Set this in Jenkins > Global Tools Configuration
 
-        jdk 'JDK 17'          // Same here
+        jdk 'JDK 21'          // Same here
 
     }
 
