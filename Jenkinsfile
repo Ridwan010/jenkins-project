@@ -44,7 +44,7 @@ pipeline {
 
             steps {
 
-                bat 'docker build -t $IMAGE_NAME .'
+                bat 'docker build -t  %IMAGE_NAME%  .'
 
             }
 
@@ -54,7 +54,7 @@ pipeline {
 
             steps {
 
-                bat 'docker run --rm -d -p 5050:9090 $IMAGE_NAME'
+                bat 'docker run --rm -d -p 5050:9090  %IMAGE_NAME% '
 
             }
 
