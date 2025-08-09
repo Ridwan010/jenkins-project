@@ -40,15 +40,15 @@ pipeline {
 
         }
 
-        // stage('Build Docker Image') {
+        stage('Build Docker Image') {
 
-        //     steps {
+            steps {
 
-        //         bat 'docker build -t $IMAGE_NAME .'
+                bat 'docker build -t $IMAGE_NAME .'
 
-        //     }
+            }
 
-        // }
+        }
 
         // stage('Run Container (Optional Test)') {
 
