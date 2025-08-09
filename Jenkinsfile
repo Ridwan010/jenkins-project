@@ -8,8 +8,6 @@ pipeline {
 
         jdk 'JDK 17'          // Same here
 
-        dockerTool 'docker-25'
-
     }
 
     environment {
