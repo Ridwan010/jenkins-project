@@ -40,25 +40,25 @@ pipeline {
 
         }
 
-        stage('Build Docker Image') {
+        // stage('Build Docker Image') {
 
-            steps {
+        //     steps {
 
-                bat 'docker build -t $IMAGE_NAME .'
+        //         bat 'docker build -t $IMAGE_NAME .'
 
-            }
+        //     }
 
-        }
+        // }
 
-        stage('Run Container (Optional Test)') {
+        // stage('Run Container (Optional Test)') {
 
-            steps {
+        //     steps {
 
-                bat 'docker run --rm -d -p 5050:9090 $IMAGE_NAME'
+        //         bat 'docker run --rm -d -p 5050:9090 $IMAGE_NAME'
 
-            }
+        //     }
 
-        }
+        // }
 
     }
 
