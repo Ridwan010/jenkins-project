@@ -8,6 +8,8 @@ pipeline {
 
         jdk 'JDK 17'          // Same here
 
+        docker '25'
+
     }
 
     environment {
