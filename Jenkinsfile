@@ -4,9 +4,9 @@ pipeline {
 
     tools {
 
-        maven 'Maven 3'       // Set this in Jenkins > Global Tools Configuration
+        maven 'Maven 3'       
 
-        jdk 'JDK 17'          // Same here
+        jdk 'JDK 17'          
 
     }
 
@@ -50,11 +50,11 @@ pipeline {
 
         }
 
-        stage('Run Container (Optional Test)') {
+        stage('Running Chuka Docker Container') {
 
             steps {
 
-                bat 'docker run --rm -d -p 5050:9090 $IMAGE_NAME'
+                bat 'docker run -d -p 5050:9090 $IMAGE_NAME'
 
             }
 
