@@ -1,4 +1,4 @@
-# Use a lightweight Java 21 base image
+# Use a lightweight Java 21 base img
 FROM eclipse-temurin:21-jre
 
 # Create a directory inside the container
