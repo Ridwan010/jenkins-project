@@ -19,13 +19,22 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
       - name: Set up Maven
-        uses: stCarolas/setup-maven
+        uses: stCarolas/setup-maven@v4
         with:
           maven-version: '3.9.6'
 
-      # # 4. Build JAR
-      # - name: Build with Maven
-      #   run: mvn clean package -DskipTests
+      - name: Build with Maven
+        run: mvn clean package
+
+
+
+
+
+
+
+
+
+
 
       # # 5. Set up Docker Buildx
       # - name: Set up Docker Buildx
