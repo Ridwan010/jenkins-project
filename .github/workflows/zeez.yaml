@@ -19,7 +19,7 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
       - name: Set up Maven
-        uses: stCarolas/setup-maven@v4
+        uses: stCarolas/setup-maven
         with:
           maven-version: '3.9.6'
 
